@@ -1,4 +1,4 @@
-name: 'Delete Comment'
+name: 'Delete Github Comment'
 description: 'delete comments from issue/pr by username'
 author: 'kubikobot'
 inputs:

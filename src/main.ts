@@ -53,9 +53,8 @@ async function run(): Promise<void> {
         )
       }
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error(error)
-    console.error(error.stack)
     core.setFailed(error.message)
   }
 }
