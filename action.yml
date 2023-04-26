@@ -1,6 +1,6 @@
 name: 'Delete Comment'
 description: 'delete comments from issue/pr by username'
-author: 'izhangzhihao'
+author: 'kubikobot'
 inputs:
   github_token:
     description: 'The GitHub token used to create an authenticated client'
@@ -13,5 +13,5 @@ inputs:
     description: 'Issue/PR on which to delete comments. If not provided, comments will be deleted across the repo.'
     required: false
 runs:
-  using: 'node12'
+  using: 'node18'
   main: 'dist/index.js'
