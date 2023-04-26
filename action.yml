@@ -1,6 +1,7 @@
 name: 'Delete Github Comment'
 description: 'delete comments from issue/pr by username'
 author: 'kubikobot'
+icon: arrow-up
 inputs:
   github_token:
     description: 'The GitHub token used to create an authenticated client'
