@@ -2,9 +2,9 @@
   <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
 </p>
 
-# Github Action to delete comments by username
+# Github Action to delete comments by username using node18
 
-Delete-comment Action will delete comments from issues/prs by username. You can either 
+Delete-Github comment Action will delete comments from issues/prs by username. You can either 
 specify an issue number on which to remove comments or let the action remove all comments
 across the repository.
 
@@ -18,9 +18,14 @@ jobs:
   delete-comments:
     runs-on: ubuntu-latest
     steps:
-      - uses: izhangzhihao/delete-comment@master
+      - uses: kubikobot/delete-comment@master
         with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
           delete_user_name: open-collective-bot[bot]
           issue_number: ${{ github.event.number }}  # remove comments from the current PR
 ```
+
+🔔 This works using node18
+
+## Attribution:
+This is based on  @izhangzhihao/delete-comment which is unmaintaind atm
